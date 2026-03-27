@@ -18,6 +18,7 @@ Current supported outputs:
    - `references/input-templates.md`
    - `references/customer-profile-schema.md`
    - `references/allocation-path-schema.md`
+   - `references/mp-product-registry-v1.md`
 3. Start from one of the template JSON files instead of writing the payload from scratch.
 4. Build one combined input JSON containing one or both sections:
    - `profile_card`
@@ -52,6 +53,8 @@ python3 scripts/render_client_pack.py \
   3. 重评估执行前两步后的工作版组合
   4. 再对剩余待配置资金做分层补齐
 - The path chart should answer **what to do first / next / later**, not become a generic asset-allocation lecture.
+- If the user wants to drill from asset buckets into actual MP products, read `references/mp-product-registry-v1.md` and use `mp_products` on step items / step3 cards.
+- Do not claim a product exists in MP unless it is present in the confirmed registry or separately confirmed by the user.
 
 ## Practical Guidance
 
@@ -69,6 +72,8 @@ python3 scripts/render_client_pack.py \
 - `references/customer-profile-schema.md`
 - `references/allocation-path-schema.md`
 - `references/example-pack.json`
+- `references/mp-product-registry-v1.md`
+- `references/mp-product-registry-v1.json`
 
 ## Scripts
 - `scripts/render_customer_profile_card.py`

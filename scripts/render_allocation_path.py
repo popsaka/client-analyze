@@ -132,12 +132,20 @@ def chip_flow_height(r, chips, max_width, size=18, gap_x=10, gap_y=10):
     return cy + row_h
 
 
+def product_line_text(products):
+    if not products:
+        return ''
+    return 'MP可选：' + ' / '.join(str(p) for p in products)
+
+
 def item_block_height(r, item, body_width):
     title_h = para_height(r, item.get('title', ''), body_width - 142, size=28, gap=6, bold=True)
     body_h = para_height(r, item.get('body', ''), body_width, size=22, gap=4, max_lines=None)
+    product_h = para_height(r, product_line_text(item.get('mp_products', [])), body_width, size=18, gap=4) if item.get('mp_products') else 0
     chip_h = r.chip_size(item.get('label', 'Step'), size=18)[1]
     top_h = max(title_h, chip_h)
-    return top_h + 12 + body_h + 14
+    extra_gap = 8 if product_h else 0
+    return top_h + 12 + body_h + extra_gap + product_h + 14
 
 
 def step3_card_height(r, card, card_width):
@@ -145,9 +153,11 @@ def step3_card_height(r, card, card_width):
     title_h = para_height(r, card.get('title', ''), inner_w, size=24, gap=6, bold=True)
     amount_h = r.chip_size(card.get('amount', ''), size=17)[1] if card.get('amount') else 0
     body_h = para_height(r, card.get('body', ''), inner_w, size=20, gap=4)
+    product_h = para_height(r, product_line_text(card.get('mp_products', [])), inner_w, size=18, gap=4) if card.get('mp_products') else 0
     gap1 = 8 if amount_h else 4
     gap2 = 8 if body_h else 0
-    return 16 + title_h + gap1 + amount_h + gap2 + body_h + 16
+    gap3 = 8 if product_h else 0
+    return 16 + title_h + gap1 + amount_h + gap2 + body_h + gap3 + product_h + 16
 
 
 def step3_grid_height(r, cards, grid_width):
@@ -271,7 +281,12 @@ def render(payload):
         top_h = max(tag_h, title_h)
         body_y = iy + top_h + 8
         body_h = r.para(x + 28, body_y, item.get('body', ''), content_w, 22, MUTED, False, 4)
-        iy = body_y + body_h + 14
+        if item.get('mp_products'):
+            product_y = body_y + body_h + 8
+            product_h = r.para(x + 28, product_y, product_line_text(item.get('mp_products', [])), content_w, 18, NAVY, False, 4)
+            iy = product_y + product_h + 14
+        else:
+            iy = body_y + body_h + 14
 
     # arrow 1
     arrow1_y1 = step1_y + step1_h
@@ -367,7 +382,9 @@ def render(payload):
                 by = ay + chip_h + 8
             else:
                 by = ay + 4
-            r.para(cx + 16, by, card.get('body', ''), card_w - 32, 20, MUTED, False, 4)
+            body_h = r.para(cx + 16, by, card.get('body', ''), card_w - 32, 20, MUTED, False, 4)
+            if card.get('mp_products'):
+                r.para(cx + 16, by + body_h + 8, product_line_text(card.get('mp_products', [])), card_w - 32, 18, NAVY, False, 4)
         current_y += row_h + row_gap
     current_y -= row_gap if cards else 0
 

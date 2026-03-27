@@ -114,6 +114,22 @@ Example:
 - `step3.cards`
 - `step3.final_recommendation`
 
+#### Optional product drill-down
+If you want the path chart to name actual MP products, add:
+- `step1.items[].mp_products`
+- `step3.cards[].mp_products`
+
+Example:
+```json
+{
+  "title": "低波收益层",
+  "amount": "150万 U",
+  "body": "先修结构，不先追求高复杂增强。",
+  "tone": "blue",
+  "mp_products": ["Balance+", "Fixed Income"]
+}
+```
+
 #### Step order is locked
 Keep this business order:
 1. 当前资产概况

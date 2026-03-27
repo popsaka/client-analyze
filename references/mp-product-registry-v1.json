@@ -1,0 +1,139 @@
+{
+  "version": "v1",
+  "source": "MP资产在12格中的定位（风险 × 流动性）｜v4（仅资产，含区间估算）",
+  "scope_note": "仅保留投资类资产/产品；交易、执行、借贷服务已剔除。收益/波动/回撤为经验区间估算，并非方案承诺。",
+  "products": [
+    {
+      "id": "balance-plus",
+      "name": "Balance+",
+      "risk_band": "C",
+      "risk_label": "稳健",
+      "liquidity_band": "L1",
+      "liquidity_label": "高流动",
+      "return_range": "4-8%",
+      "volatility_range": "0.5-2%",
+      "mdd_range": "0-1%",
+      "notes": "适合高流动低波收益底仓。"
+    },
+    {
+      "id": "fixed-income",
+      "name": "Fixed Income",
+      "risk_band": "C",
+      "risk_label": "稳健",
+      "liquidity_band": "L2",
+      "liquidity_label": "中流动",
+      "return_range": "6-12%",
+      "volatility_range": "1-4%",
+      "mdd_range": "1-4%",
+      "notes": "更像中流动的低波收益层。"
+    },
+    {
+      "id": "arbitrage",
+      "name": "套利策略（Arbitrage）",
+      "risk_band": "B",
+      "risk_label": "平衡",
+      "liquidity_band": "L1",
+      "liquidity_label": "高流动",
+      "return_range": "8-18%",
+      "volatility_range": "4-12%",
+      "mdd_range": "5-15%",
+      "notes": "适合作为非方向性收益来源。"
+    },
+    {
+      "id": "dual-currency",
+      "name": "Dual Currency",
+      "risk_band": "B",
+      "risk_label": "平衡",
+      "liquidity_band": "L2",
+      "liquidity_label": "中流动",
+      "return_range": "8-25%",
+      "volatility_range": "12-35%",
+      "mdd_range": "10-35%",
+      "notes": "期权收益增强类，需注意路径依赖。"
+    },
+    {
+      "id": "daily-dual-currency",
+      "name": "Daily Dual Currency",
+      "risk_band": "B",
+      "risk_label": "平衡",
+      "liquidity_band": "L2",
+      "liquidity_label": "中流动",
+      "return_range": "10-30%",
+      "volatility_range": "15-40%",
+      "mdd_range": "12-40%",
+      "notes": "更高频的收益增强工具，但波动/回撤更高。"
+    },
+    {
+      "id": "long-short",
+      "name": "多空策略（Long-Short）",
+      "risk_band": "A",
+      "risk_label": "进取",
+      "liquidity_band": "L1",
+      "liquidity_label": "高流动",
+      "return_range": "12-28%",
+      "volatility_range": "10-25%",
+      "mdd_range": "10-28%",
+      "notes": "适合作为进取但非纯单边 beta 的替代层。"
+    },
+    {
+      "id": "snowball",
+      "name": "Snowball",
+      "risk_band": "A",
+      "risk_label": "进取",
+      "liquidity_band": "L2",
+      "liquidity_label": "中流动",
+      "return_range": "12-35%",
+      "volatility_range": "18-45%",
+      "mdd_range": "15-45%",
+      "notes": "结构化产品，需关注路径依赖与适配边界。"
+    },
+    {
+      "id": "seagull",
+      "name": "Seagull",
+      "risk_band": "A",
+      "risk_label": "进取",
+      "liquidity_band": "L2",
+      "liquidity_label": "中流动",
+      "return_range": "10-30%",
+      "volatility_range": "15-40%",
+      "mdd_range": "12-40%",
+      "notes": "结构化产品，适合有明确收益增强诉求的客户。"
+    },
+    {
+      "id": "sharkfin",
+      "name": "Sharkfin",
+      "risk_band": "A",
+      "risk_label": "进取",
+      "liquidity_band": "L2",
+      "liquidity_label": "中流动",
+      "return_range": "8-20%",
+      "volatility_range": "10-30%",
+      "mdd_range": "8-30%",
+      "notes": "结构化产品，相对更温和但仍有路径依赖。"
+    },
+    {
+      "id": "structured-otc",
+      "name": "Structured OTC（定制）",
+      "risk_band": "A",
+      "risk_label": "进取",
+      "liquidity_band": "L3",
+      "liquidity_label": "低流动",
+      "return_range": "8-35%",
+      "volatility_range": "10-45%",
+      "mdd_range": "10-45%",
+      "notes": "低流动定制类，更适合明确接受定制结构的客户。"
+    },
+    {
+      "id": "trend-cta",
+      "name": "趋势策略（Trend/CTA）",
+      "risk_band": "A+",
+      "risk_label": "高波动容忍",
+      "liquidity_band": "L1",
+      "liquidity_label": "高流动",
+      "return_range": "15-40%",
+      "volatility_range": "20-50%",
+      "mdd_range": "20-50%",
+      "notes": "更适合作为高波动容忍客户的进攻层。"
+    }
+  ]
+}

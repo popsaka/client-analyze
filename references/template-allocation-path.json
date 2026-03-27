@@ -21,13 +21,15 @@
         "label": "Step 1A",
         "title": "先做的动作 A",
         "body": "为什么先做这个；它的定位是什么；为什么不应和核心配置混在一起。",
-        "color": "blue"
+        "color": "blue",
+        "mp_products": ["可选产品1", "可选产品2"]
       },
       {
         "label": "Step 1B",
         "title": "再做的动作 B",
         "body": "写清楚节奏、分步执行方式、风险控制方式。",
-        "color": "red"
+        "color": "red",
+        "mp_products": ["可选产品1"]
       }
     ]
   },
@@ -51,10 +53,10 @@
   "step3": {
     "title": "继续做配置完善（针对剩余待配置资金）",
     "cards": [
-      {"title": "配置层 1", "amount": "<金额>", "body": "这层的作用。", "tone": "blue"},
-      {"title": "配置层 2", "amount": "<金额>", "body": "这层的作用。", "tone": "green"},
-      {"title": "配置层 3", "amount": "<金额>", "body": "这层的作用。", "tone": "orange"},
-      {"title": "配置层 4", "amount": "<金额>", "body": "这层的作用。", "tone": "purple"}
+      {"title": "配置层 1", "amount": "<金额>", "body": "这层的作用。", "tone": "blue", "mp_products": ["可选产品1", "可选产品2"]},
+      {"title": "配置层 2", "amount": "<金额>", "body": "这层的作用。", "tone": "green", "mp_products": ["可选产品1"]},
+      {"title": "配置层 3", "amount": "<金额>", "body": "这层的作用。", "tone": "orange", "mp_products": ["可选产品1"]},
+      {"title": "配置层 4", "amount": "<金额>", "body": "这层的作用。", "tone": "purple", "mp_products": ["可选产品1"]}
     ],
     "final_recommendation": "一句话建议：写清楚先做什么、再做什么、最后怎么把剩余资金补齐。"
   },

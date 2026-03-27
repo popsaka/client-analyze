@@ -1,0 +1,120 @@
+{
+  "profile_card": {
+    "title": "客户画像卡｜<客户名>",
+    "subtitle": "基于：<资产概况 / 主要持仓 / 日期>",
+    "version": "v1",
+    "profile": {
+      "client_type": "个人 / 家办 / 公司金库",
+      "aum": "<AUM或区间>",
+      "experience": "少 / 中 / 多",
+      "income_stability": "低 / 中 / 高",
+      "style": "平衡增长",
+      "one_liner": "一句话写清客户真正约束。",
+      "tags": [
+        {"text": "标签1", "color": "blue"},
+        {"text": "标签2", "color": "orange"},
+        {"text": "标签3", "color": "green"}
+      ]
+    },
+    "preferences": [
+      {"label": "收益目标", "value": "<填写>"},
+      {"label": "流动性要求", "value": "<填写>"},
+      {"label": "资金性质", "value": "<填写>"},
+      {"label": "风险偏好", "value": "<填写>"},
+      {"label": "关键约束", "value": "<填写>"},
+      {"label": "服务方式", "value": "<填写>"}
+    ],
+    "allocation": {
+      "current": {"B0": 30, "B1": 10, "B2": 15, "B3": 45, "B4": 0, "B5": 0},
+      "recommended_preset": "平衡增长"
+    },
+    "core_conclusion": {
+      "lines": [
+        "第一句：客户画像结论。",
+        "第二句：组合错配结论。"
+      ],
+      "chips": [
+        {"text": "标签结论1", "color": "green"},
+        {"text": "标签结论2", "color": "red"}
+      ]
+    },
+    "diagnostics": [
+      {"title": "流动性偏差", "current": "<当前值>", "preference": "<偏好值>", "conclusion": "<一句结论>", "severity": "高"},
+      {"title": "结构偏差", "current": "<当前值>", "preference": "<偏好值>", "conclusion": "<一句结论>", "severity": "中"},
+      {"title": "收益路径偏差", "current": "<当前值>", "preference": "<偏好值>", "conclusion": "<一句结论>", "severity": "中"}
+    ],
+    "behavior_lines": [
+      "• 行为观察 1",
+      "• 行为观察 2",
+      "• 行为观察 3",
+      "• 最后一行留给总判断"
+    ],
+    "actions": [
+      "动作 1",
+      "动作 2",
+      "动作 3",
+      "动作 4"
+    ]
+  },
+  "allocation_path": {
+    "title": "<客户名>配置建议路径（按需求顺序）",
+    "subtitle": "基于：<主要持仓 / 资产概况>｜先满足明确需求，再重评估，再补完整配置",
+    "current_overview": {
+      "bullets": [
+        "当前资产要点 1",
+        "当前资产要点 2",
+        "当前结构问题 1",
+        "当前结构问题 2"
+      ],
+      "chips": [
+        {"text": "明确需求1", "color": "blue"},
+        {"text": "明确需求2", "color": "red"},
+        {"text": "执行方式 / 特别约束", "color": "gray"}
+      ]
+    },
+    "step1": {
+      "title": "先满足客户明确点名的需求",
+      "items": [
+        {
+          "label": "Step 1A",
+          "title": "先做的动作 A",
+          "body": "为什么先做这个。",
+          "color": "blue"
+        },
+        {
+          "label": "Step 1B",
+          "title": "再做的动作 B",
+          "body": "为什么第二步做这个。",
+          "color": "red"
+        }
+      ]
+    },
+    "step2": {
+      "title": "完成以上两步后，先重新评估客户配置",
+      "subtitle": "重新评估后的组合（工作版）",
+      "chips": [
+        {"text": "模块1", "color": "blue"},
+        {"text": "模块2", "color": "orange"},
+        {"text": "模块3", "color": "gray"},
+        {"text": "待配置", "color": "green"}
+      ],
+      "segments": [
+        {"title": "模块1", "amount": "<金额/数量>", "percent": 20, "color": "#5B95E5"},
+        {"title": "模块2", "amount": "<金额/数量>", "percent": 25, "color": "#FF7A16"},
+        {"title": "模块3", "amount": "<金额/数量>", "percent": 10, "color": "#334155"},
+        {"title": "待配置", "amount": "<金额>", "percent": 45, "color": "#22C55E"}
+      ],
+      "conclusion": "执行完前两步后，组合变成什么结构，还缺什么。"
+    },
+    "step3": {
+      "title": "继续做配置完善（针对剩余待配置资金）",
+      "cards": [
+        {"title": "配置层 1", "amount": "<金额>", "body": "这层的作用。", "tone": "blue"},
+        {"title": "配置层 2", "amount": "<金额>", "body": "这层的作用。", "tone": "green"},
+        {"title": "配置层 3", "amount": "<金额>", "body": "这层的作用。", "tone": "orange"},
+        {"title": "配置层 4", "amount": "<金额>", "body": "这层的作用。", "tone": "purple"}
+      ],
+      "final_recommendation": "一句话建议：先做什么、再做什么、最后怎么补齐。"
+    }
+  }
+}

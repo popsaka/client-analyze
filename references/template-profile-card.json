@@ -1,0 +1,58 @@
+{
+  "title": "客户画像卡｜<客户名>",
+  "subtitle": "基于：<资产概况 / 主要持仓 / 日期>",
+  "version": "v1",
+  "profile": {
+    "client_type": "个人 / 家办 / 公司金库",
+    "aum": "<AUM或区间>",
+    "experience": "少 / 中 / 多",
+    "income_stability": "低 / 中 / 高",
+    "style": "平衡增长",
+    "one_liner": "一句话写清客户真正的约束，不要写空话。",
+    "tags": [
+      {"text": "标签1", "color": "blue"},
+      {"text": "标签2", "color": "orange"},
+      {"text": "标签3", "color": "green"}
+    ]
+  },
+  "preferences": [
+    {"label": "收益目标", "value": "<例如：希望跑赢币圈平均水平>"},
+    {"label": "流动性要求", "value": "<例如：极低，基本不需要>"},
+    {"label": "资金性质", "value": "<例如：完全闲钱>"},
+    {"label": "风险偏好", "value": "<例如：高，可接受较大波动>"},
+    {"label": "关键约束", "value": "<例如：不希望 BTC 本位大幅回撤>"},
+    {"label": "服务方式", "value": "<例如：顾问建议→客户确认→顾问代操作>"}
+  ],
+  "allocation": {
+    "current": {"B0": 30, "B1": 10, "B2": 15, "B3": 45, "B4": 0, "B5": 0},
+    "recommended_preset": "平衡增长"
+  },
+  "core_conclusion": {
+    "lines": [
+      "第一句：这类客户真正的特征是什么；",
+      "第二句：当前组合和真实需求的关键错配在哪里。"
+    ],
+    "chips": [
+      {"text": "标签结论1", "color": "green"},
+      {"text": "标签结论2", "color": "red"}
+    ]
+  },
+  "diagnostics": [
+    {"title": "流动性偏差", "current": "<当前值>", "preference": "<偏好值>", "conclusion": "<一句结论>", "severity": "高"},
+    {"title": "结构偏差", "current": "<当前值>", "preference": "<偏好值>", "conclusion": "<一句结论>", "severity": "中"},
+    {"title": "收益路径偏差", "current": "<当前值>", "preference": "<偏好值>", "conclusion": "<一句结论>", "severity": "中"}
+  ],
+  "behavior_lines": [
+    "• 行为观察 1",
+    "• 行为观察 2",
+    "• 行为观察 3",
+    "• 最后一行留给总判断"
+  ],
+  "actions": [
+    "动作 1：先动哪一层。",
+    "动作 2：先补哪个缺口。",
+    "动作 3：执行前要确认什么边界。",
+    "动作 4：后续如何监控与再评估。"
+  ],
+  "footer": "注：此处可保留默认 footer，也可按项目改写。"
+}

@@ -15,9 +15,11 @@ Current supported outputs:
 
 1. Normalize the source information into structured JSON.
 2. If needed, read:
+   - `references/input-templates.md`
    - `references/customer-profile-schema.md`
    - `references/allocation-path-schema.md`
-3. Build one combined input JSON containing one or both sections:
+3. Start from one of the template JSON files instead of writing the payload from scratch.
+4. Build one combined input JSON containing one or both sections:
    - `profile_card`
    - `allocation_path`
 4. Run the bundled renderer:
@@ -60,6 +62,10 @@ python3 scripts/render_client_pack.py \
 - For repeatability, keep sample inputs in JSON and re-render from scripts.
 
 ## References
+- `references/input-templates.md`
+- `references/template-profile-card.json`
+- `references/template-allocation-path.json`
+- `references/template-client-pack.json`
 - `references/customer-profile-schema.md`
 - `references/allocation-path-schema.md`
 - `references/example-pack.json`

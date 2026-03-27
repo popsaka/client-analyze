@@ -8,7 +8,7 @@ Use these files in two layers:
 - `template-client-pack.json` — render both together
 
 ## 2) Filled example
-- `example-pack.json` — a real worked example based on the previously built 叶哥 materials
+- `example-pack.json` — a **fictional worked example with synthetic data**, only for demonstrating the input structure and renderer output
 
 ---
 
@@ -46,6 +46,13 @@ python3 scripts/render_client_pack.py \
   --output-dir /tmp/client_pack_out \
   --prefix client_name
 ```
+
+---
+
+## Privacy rule
+- Do **not** put real client names, exact holdings, or sensitive constraints into public examples.
+- Public example files must stay fictional / synthetic.
+- If you need a real client case, create a separate private JSON outside the repo.
 
 ---
 
@@ -137,6 +144,6 @@ In `step2.segments`, each segment should ideally contain:
 
 ## File intent summary
 - `template-*.json` = structure-first starting points
-- `example-pack.json` = filled reference answer
+- `example-pack.json` = fictional filled reference answer
 - `customer-profile-schema.md` = house rules for the card
 - `allocation-path-schema.md` = house rules for the path chart

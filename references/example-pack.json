@@ -1,0 +1,125 @@
+{
+  "profile_card": {
+    "title": "叶哥客户画像卡",
+    "subtitle": "按 BTC≈70.9k USD 粗估｜320 BTC + 2800万 USDT｜更新版",
+    "version": "v2",
+    "profile": {
+      "client_type": "个人",
+      "aum": "≈50.7M USD",
+      "experience": "少",
+      "income_stability": "高",
+      "style": "进取增长",
+      "one_liner": "经验不深但能扛 BTC 美元价格大波动；真正的约束不是 USD 回撤，而是 BTC 本位不能大幅回撤。",
+      "tags": [
+        {"text": "高风险偏好", "color": "orange"},
+        {"text": "低流动性需求", "color": "green"},
+        {"text": "BTC本位保护", "color": "blue"}
+      ]
+    },
+    "preferences": [
+      {"label": "收益目标", "value": "希望跑赢币圈平均水平"},
+      {"label": "流动性要求", "value": "极低，基本不需要"},
+      {"label": "资金性质", "value": "完全闲钱"},
+      {"label": "风险偏好", "value": "高，可接受 BTC 价格大幅回撤"},
+      {"label": "BTC价格容忍", "value": "已实际承受 30%–40% 浮亏且无所谓"},
+      {"label": "BTC本位约束", "value": "不希望 BTC 本位大幅回撤"},
+      {"label": "增强诉求", "value": "BTC 本位增强，目标年化约 3% 且稳健"},
+      {"label": "服务方式", "value": "顾问建议→客户确认→顾问代操作"}
+    ],
+    "allocation": {
+      "current": {"B0": 55.2, "B1": 0, "B2": 0, "B3": 44.8, "B4": 0, "B5": 0},
+      "recommended": {"B0": 10, "B1": 25, "B2": 10, "B3": 45, "B4": 0, "B5": 10},
+      "structure_conclusion": "结构结论：B0（现金管理）过配约 +45.2pct；B1 / B2 / B5 基本缺失，而 B3（高波增长）与其风险偏好基本匹配。当前核心问题不是 BTC 仓位太高，而是 USDT 闲置过多、BTC 本位增强层缺失。"
+    },
+    "core_conclusion": {
+      "lines": [
+        "这不是低风险客户，客户对 BTC 美元价格波动的承受能力其实很高；",
+        "真正约束在于 BTC 本位不能大幅回撤，因此组合应从“BTC + 大额闲置 USDT”升级成“BTC 主仓 + 稳健增强 + 中间层配置”。"
+      ],
+      "chips": [
+        {"text": "USD波动容忍：高", "color": "orange"},
+        {"text": "BTC本位回撤：低容忍", "color": "red"}
+      ]
+    },
+    "diagnostics": [
+      {"title": "流动性偏差", "current": "现金管理类≈55.2%", "preference": "流动性要求极低", "conclusion": "大量 USDT 闲置", "severity": "高"},
+      {"title": "结构偏差", "current": "B1/B2/B5 几乎为 0", "preference": "应有增强层、中间层与对冲层", "conclusion": "配置断层明显", "severity": "高"},
+      {"title": "BTC本位目标偏差", "current": "BTC 现货为主，增强层缺失", "preference": "3%左右 BTC 年化、回撤小", "conclusion": "缺少稳健 BTC 本位增强层", "severity": "高"},
+      {"title": "收益路径偏差", "current": "收益主要靠 BTC 方向 + USDT 闲置", "preference": "希望跑赢币圈平均水平", "conclusion": "当前收益来源过于单一", "severity": "中"}
+    ],
+    "behavior_lines": [
+      "• 投资经验少，但对 BTC 美元价格波动的心理承受能力并不低",
+      "• 风险口径是分裂的：能接受 USD 本位大回撤，但不接受 BTC 本位大回撤",
+      "• 这类客户不适合高复杂度高路径依赖结构，更适合保守型 BTC 增强",
+      "• 判断：这是高风险承受 + 低流动性需求 + BTC本位保护诉求的结构型客户。"
+    ],
+    "actions": [
+      "先把 300万 USDT 单列为 BTDR 战术仓，避免混进核心配置口径。",
+      "把一部分 BTC 单独划入保守型 BTC 本位增强层，目标约 3% BTC 年化、回撤小。",
+      "其余 USDT 不再长期闲置，优先补 B1（低波收益）与 B5（黄金/对冲），再补 B2（中波增长）。",
+      "先明确 BTC 本位回撤红线，再决定增强仓位规模与具体执行节奏。"
+    ]
+  },
+  "allocation_path": {
+    "title": "叶哥配置建议路径（按需求顺序）",
+    "subtitle": "基于：320 BTC + 2800万 USDT｜先满足明确需求，再重评估，再补完整配置",
+    "current_overview": {
+      "bullets": [
+        "320 BTC ≈ 2269万 USD（约 44.8%）",
+        "2800万 USDT（约 55.2%）",
+        "当前是典型 BTC + 大额闲置 USDT 两极结构",
+        "核心问题不是 BTC 仓位太高，而是中间层和增强层基本缺失"
+      ],
+      "chips": [
+        {"text": "明确需求1：BTDR 300万 USDT", "color": "blue"},
+        {"text": "明确需求2：BTC本位增强 ≈3%", "color": "red"},
+        {"text": "服务方式：顾问建议→客户确认→代操作", "color": "gray"}
+      ]
+    },
+    "step1": {
+      "title": "先满足客户明确点名的需求",
+      "items": [
+        {
+          "label": "Step 1A",
+          "title": "买入 BTDR 300万 USDT 等值",
+          "body": "定位：战术仓 / 客户指定仓，不视为真正分散配置；先满足明确需求，避免一上来打散全部闲置资金。",
+          "color": "blue"
+        },
+        {
+          "label": "Step 1B",
+          "title": "配置 BTC 本位增强（建议目标 200 BTC）",
+          "body": "先上 100 BTC，观察 2-4 周后再补 100 BTC；目标是保守型 BTC 本位增强，而不是高复杂度结构。",
+          "color": "red"
+        }
+      ]
+    },
+    "step2": {
+      "title": "完成以上两步后，先重新评估客户配置",
+      "subtitle": "重新评估后的组合（工作版）",
+      "chips": [
+        {"text": "BTC现货 120个", "color": "blue"},
+        {"text": "BTC增强 200个", "color": "orange"},
+        {"text": "BTDR 300万", "color": "gray"},
+        {"text": "待配置 USDT 2500万", "color": "green"}
+      ],
+      "segments": [
+        {"title": "BTC现货", "amount": "120个", "percent": 16.8, "color": "#5B95E5"},
+        {"title": "BTC增强", "amount": "200个", "percent": 28.0, "color": "#FF7A16"},
+        {"title": "BTDR", "amount": "300万", "percent": 5.9, "color": "#334155"},
+        {"title": "USDT待配置", "amount": "2500万", "percent": 49.3, "color": "#22C55E"}
+      ],
+      "conclusion": "重评估结论：执行完客户明确点名的 BTDR 与 BTC 本位增强后，组合不再是纯粹的 BTC + USDT 两极结构，但仍有近一半 USDT 待配置，需要继续补齐低波层、对冲层和中波增长层。"
+    },
+    "step3": {
+      "title": "继续做配置完善（针对剩余 2500万 USDT）",
+      "cards": [
+        {"title": "低波收益 / FI", "amount": "800万 USDT", "body": "先补稳定收益底仓，降低整体闲置现金比例。", "tone": "blue"},
+        {"title": "套利 / 市场中性", "amount": "700万 USDT", "body": "增加非方向性收益来源，避免收益路径过于单一。", "tone": "green"},
+        {"title": "黄金 / 对冲层", "amount": "500万 USDT", "body": "补抗通胀与风险对冲层，改善组合韧性。", "tone": "orange"},
+        {"title": "Balance+ / 战备现金", "amount": "500万 USDT", "body": "保留再平衡和后续战术空间，不再让全部闲置资金长期空转。", "tone": "purple"}
+      ],
+      "final_recommendation": "一句话建议：先满足客户明确点名的 BTDR 与 BTC 增强需求；完成后立刻重评估，再把剩余 USDT 从闲置现金升级成多层结构。"
+    },
+    "footer": "注：以上为工作版配置建议路径，正式执行前需结合产品可得性、合规与执行 SLA 校正。"
+  }
+}
